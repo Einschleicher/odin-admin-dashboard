@@ -13,11 +13,10 @@ body {
 }
 
 .sidebar {
-    border: 2px solid blue;
     grid-row: 1 / 3;
     font-size: 2rem;
     padding: 20px;
-    background-color: blanchedalmond;
+    background-color: #e4e395;
     display: grid;
     grid-template-columns: 40px 1fr;
     grid-template-rows: 70px repeat(5, 40px) 70px;
@@ -51,8 +50,8 @@ body {
 }
 
 .header {
-    border: 2px solid green;
-    background-color: palevioletred;
+    background-color: white;
+    border-bottom: 1px solid grey;
 }
 
 .header-container-one {
@@ -67,25 +66,35 @@ body {
 .header-container-two {
     padding: 0 60px 20px;
     display: grid;
-    grid-template-columns: 70px 1fr 120px 120px 120px;
+    grid-template-columns: 70px 1fr 100px 100px 100px;
     grid-auto-flow: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+}
+
+button {
+    background-color: #e4e395;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 800;
 }
 
 .searchbar {
     margin-right: 100px;
+    background-color: #f0efc2;
+    border-radius: 20px;
+    border: 0;
+    height: 30px;
 }
 
 .content {
-
-    border: 2px solid yellow;
     display: flex;
 }
 
 .content-container-one {
     flex: 1;
-    background-color: silver;
+    background-color: #f0efc2;
     display: grid;
     justify-content: center;
     grid-template-columns: 350px 350px;
@@ -104,10 +113,10 @@ body {
 }
 
 .content-card {
-    background-color: coral;
+    background-color: rgb(250, 250, 250);
     border-radius: 10px;
     padding: 20px;
-    border-left: 8px solid rgb(253, 100, 44);
+    border-left: 8px solid #b8b52e;
 }
 
 .icon {
@@ -122,7 +131,7 @@ body {
 .content-container-two {
     padding: 10px;
     width: 25%;
-    background-color: palegoldenrod;
+    background-color: #f0efc2;
     display: grid;
     /* Fixed rows causes content to overflow if more text is entered: */
     /* grid-template-rows: 40px 400px 40px 200px; */
@@ -132,9 +141,10 @@ body {
 }
 
 .announcements-card {
-    background-color: blueviolet;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 20px;
     /* height: 250px; */
 }
 
@@ -144,8 +154,9 @@ hr {
 }
 
 .trending-card {
-    padding: 10px;
-    background-color: darkorchid;
+    padding: 20px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-auto-rows: 30px;
