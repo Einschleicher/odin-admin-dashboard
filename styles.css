@@ -61,7 +61,7 @@ img.logo {
 
 .header {
     background-color: white;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #b8b52e;
     font-size: 1.25rem;
 }
 
@@ -97,6 +97,7 @@ button {
     border-radius: 20px;
     border: 0;
     height: 30px;
+    padding: 0 20px;
 }
 
 .content {
@@ -178,4 +179,10 @@ hr {
     grid-auto-rows: 30px;
     gap: 10px;
     align-items: center;
+}
+
+.content-card,
+.announcements-card,
+.trending-card {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
