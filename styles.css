@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto 1fr;
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 .sidebar {
@@ -19,6 +19,9 @@ body {
     background-color: blanchedalmond;
     display: grid;
     grid-template-columns: 40px 1fr;
+    grid-template-rows: 70px repeat(5, 40px) 70px;
+    grid-auto-rows: 40px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -74,5 +77,64 @@ body {
 }
 
 .content {
+
     border: 2px solid yellow;
+    display: flex;
+}
+
+.content-container-one {
+    flex: 1;
+    background-color: silver;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 40px;
+    grid-auto-rows: 180px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.content-title {
+    font-size: 2rem;
+}
+
+#projects-title {
+    grid-column: 1 / 3;
+}
+
+.content-card {
+    background-color: coral;
+}
+
+.content-container-two {
+    padding: 10px;
+    width: 25%;
+    background-color: palegoldenrod;
+    display: grid;
+    /* grid-template-rows: 40px 400px 40px 200px; */
+    /* Stretched rows because of auto and 100vh in body */
+    grid-template-rows: 40px auto 40px auto;
+    gap: 10px;
+}
+
+.announcements-card {
+    background-color: blueviolet;
+    margin-bottom: 10px;
+    padding: 10px;
+    /* height: 250px; */
+}
+
+hr {
+    width: -20px;
+    margin: 10px auto;
+}
+
+.trending-card {
+    padding: 10px;
+    background-color: darkorchid;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-auto-rows: 30px;
+    gap: 10px;
+    align-items: center;
 }
