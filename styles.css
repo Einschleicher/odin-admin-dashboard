@@ -8,8 +8,7 @@ body {
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto 1fr;
-    /* This causes stretching of some boxes: */
-    /* height: 100vh; */
+    height: 100vh; /* This causes stretching of some grid boxes, so i used flexbox for content-container-two instead */
 }
 
 .sidebar {
@@ -77,7 +76,6 @@ img.logo {
     grid-auto-flow: column;
     align-items: center;
     gap: 20px;
-    /* height: fit-content; */
 }
 
 button {
@@ -140,12 +138,14 @@ button {
     padding: 10px;
     width: 25%;
     background-color: #f0efc2;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     /* Fixed rows causes content to overflow if more text is entered: */
     /* grid-template-rows: 40px 400px 40px 200px; */
     /* Stretched rows because of auto and 100vh in body: */
-    grid-template-rows: 40px auto 40px auto;
+    /* grid-template-rows: 40px auto 40px auto auto; */
     gap: 10px;
+    /* height: fit-content; -> causes white box in the bottom right */
 }
 
 .announcements-card {
@@ -153,7 +153,6 @@ button {
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 20px;
-    /* height: 250px; */
 }
 
 hr {
