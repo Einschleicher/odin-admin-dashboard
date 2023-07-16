@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.content-title, .trending-title, .announcement-title, h3, h4 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 body {
@@ -123,6 +128,7 @@ button {
     border-radius: 10px;
     padding: 20px;
     border-left: 8px solid #b8b52e;
+    position: relative;
 }
 
 .icon {
@@ -132,10 +138,13 @@ button {
 .icon-trio {
     text-align: right;
     padding: 20px 0;
+    position: absolute; /* little hack to fix the 5-liner in the last box, compared to 4-liners in the other boxes */
+    right: 20px;
+    bottom: 0px;
 }
 
 .content-container-two {
-    padding: 10px;
+    padding: 10px 20px;
     width: 25%;
     background-color: #f0efc2;
     display: flex;
